@@ -74,30 +74,33 @@
 
     <!-- section es un div. Esta es la sección de presentación -->
     <!-- ocupa el 100% -->
-    <section id="presentación" class="container col-xxl-8 px-4 py-5 vh-100">
+    <section id="presentacion" class="container-fluid" data-bs-theme="dark">
+      <!-- creamos un nuevo div y metemos todo el contenido y le agregamos las clases que antes tenía section -->
+      <div class="container col-xxl-8 px-4 py-5 vh-100">
+        <!-- si no lleva imagen,quita el reverse -->
+        <div id="inicio" class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://image.freepik.com/free-vector/flat-design-woman-programmer-coding_23-2148267155.jpg"
+              class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
 
-      <!-- si no lleva imagen,quita el reverse -->
-      <div id="inicio" class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="https://image.freepik.com/free-vector/flat-design-woman-programmer-coding_23-2148267155.jpg"
-            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div>
+          <!-- inicio -->
+          <div class="col-lg-6">
+            <h1 class="display-5 text-white fw-bold text-body-emphasis lh-1 mb-3">Diana H. Rendón</h1>
 
-        <!-- inicio -->
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Diana H. Rendón</h1>
+            <p class="lead text-white">
 
-          <p class="lead">
+              Desarrolladora front-end junior, amante de los libros y de Taylor Swift
 
-            Desarrolladora front-end junior, amante de los libros y de Taylor Swift
-
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-info  btn-lg px-4 me-md-2">Contáctame</button>
-            <button type="button" class="btn btn-outline-warning btn-lg px-4">dianarendon2011@gmail.com</button>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-info  btn-lg px-4 me-md-2">Contáctame</button>
+              <button type="button" class="btn btn-outline-warning btn-lg px-4">dianarendon2011@gmail.com</button>
+            </div>
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- Habilidades -->
@@ -294,14 +297,14 @@
       <!-- carousel-dark y data-bs-theme="dark" van en modo oscuro  -->
       <div id="myCarousel" class="carousel carousel-dark slide mb-6 carousel-fade" data-bs-theme="dark"
         data-bs-ride="carousel">
-        <div class="carousel-indicators">
+        <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
             aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
             class=""></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
             aria-current="true"></button>
-        </div>
+        </div> -->
 
         <div class="carousel-inner">
           <!-- content 1 -->
@@ -313,7 +316,7 @@
             <!-- <div class="carousel-caption"> -->
 
             <!-- da estilo -->
-            <article class="container text-center m-5">
+            <article class="container text-center">
               <img class="rounded-4" src="assets/inicio.avif" height="100" alt="">
               <h3>Ada Lovelace</h3>
               <p> Diana es una estudiante excepcional</p>
@@ -323,7 +326,7 @@
 
           <!-- content 2 -->
           <div class="carousel-item">
-            <article class="container text-center m-5">
+            <article class="container text-center">
               <img class="rounded-4" src="assets/inicio.avif" height="100" alt="">
               <h3>Ada Lovelace 2</h3>
               <p> Diana es una estudiante excepcional</p>
@@ -333,7 +336,7 @@
 
           <!-- content 3 -->
           <div class="carousel-item">
-            <article class="container text-center m-5">
+            <article class="container text-center">
               <img class="rounded-4" src="assets/google.png" height="100" alt="">
               <h3>Ada Lovelace</h3>
               <p> Diana es una estudiante excepcional</p>
@@ -376,15 +379,38 @@
 
 
   <!-- Footer -->
-  <footer id="contacto" class="py-3 my-4">
+  <footer id="contacto" class="py-3 bg-black" data-bs-theme="dark">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+
+      <h5 class="text-white text-center my-5">"...Por lo tanto, lo que debemos hacer es esforzarnos y perseverar y NUNCA
+        RENDIRNOS."</h5>
+
+      <li class="nav-item">
+        <a href="#inicio" class="nav-link px-2 text-body-secondary">
+          <i class="bi bi-house-door-fill"></i>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="https://github.com/dianaRendon" class="nav-link px-2 text-body-secondary">
+          <i class="bi bi-github"></i>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/diana-hern%C3%A1ndez-rend%C3%B3n-445a46278/"
+          class="nav-link px-2 text-body-secondary">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </li>
+
+
+
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
-    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+    <p class="text-center text-body-secondary">© 2024 Diana Rendón, TECHNOLOCHICAS PRO</p>
   </footer>
 
 
