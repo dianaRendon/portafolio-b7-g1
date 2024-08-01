@@ -10,11 +10,11 @@ Poyecto desplegado https://dianarendon.netlify.app/
 
 ## Secciones de mi sitio
 
-![Presentación](assets/readme/)
-![Habilidades](assets/readme/)
-![Proyectos](assets/readme/)
-![Experiencias](assets/readme/)
-![Contacto](assets/readme/)
+![Presentación](assets/readme/1.png)
+![Habilidades](assets/readme/2.png)
+![Proyectos](assets/readme/3.png)
+![Experiencias](assets/readme/4.png)
+![Contacto](assets/readme/5.png)
 
 ## Tecnologías
 * HTML

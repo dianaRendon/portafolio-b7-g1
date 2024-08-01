@@ -1,12 +1,39 @@
-#presentacion {
-    height: 90vh;
+.fondo {
+    /* height: 90vh;
     display: flex;
     justify-content: start;
     align-items: center;
     background-image: url("assets/fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #3e005e;
+}
+
+.fondo-secciones {
+    /* background-color: #db545a; */
+    background-color: #3e005e;
+}
+
+
+body{  
+    color: white;
+    background-image: url("assets/fondo-secciones.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+
+}
+
+
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.source-code-pro-fuente {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .proyecto {

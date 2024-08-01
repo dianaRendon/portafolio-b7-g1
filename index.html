@@ -16,6 +16,11 @@
   <!-- icons de Bootstrap "vía CDN" -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <!-- CDN para el tipo de fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,7 +34,7 @@
     <!-- color de fondo -->
     <!-- Fija la barra arriba -->
     <!-- color del icono menú -->
-    <nav class="navbar navbar-expand-md bg-black fixed-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md  fixed-top fondo" data-bs-theme="dark">
       <!-- container-fluid hace que el texto se expanda -->
       <div class="container ">
 
@@ -74,27 +79,29 @@
 
     <!-- section es un div. Esta es la sección de presentación -->
     <!-- ocupa el 100% -->
-    <section id="presentacion" class="container-fluid" data-bs-theme="dark">
+    <section id="presentacion" class="container-fluid fondo" data-bs-theme="dark">
       <!-- creamos un nuevo div y metemos todo el contenido y le agregamos las clases que antes tenía section -->
-      <div class="container col-xxl-8 px-4 py-5 vh-100">
+      <div class="container col-xxl-8 px-4 py-5 ">
         <!-- si no lleva imagen,quita el reverse -->
         <div id="inicio" class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://image.freepik.com/free-vector/flat-design-woman-programmer-coding_23-2148267155.jpg"
-              class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <img src="assets/presentacion.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+              height="500" loading="lazy">
           </div>
 
           <!-- inicio -->
-          <div class="col-lg-6">
-            <h1 class="display-5 text-white fw-bold text-body-emphasis lh-1 mb-3">Diana H. Rendón</h1>
+          <div class="col-lg-6 source-code-pro-fuente">
+            <h1 id="titulo" class=" display-5 text-white fw-bold text-body-emphasis lh-1 mb-3">Diana H. Rendón</h1>
 
-            <p class="lead text-white">
+            <p class="lead text-white ">
 
-              Desarrolladora front-end junior, amante de los libros y de Taylor Swift
+              Desarrolladora front-end junior, amante de los libros y de Taylor Swift. Busco oportunidades para crecer
+              como desarrolladora y colaborar en proyectos que marquen una diferencia.
 
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-info  btn-lg px-4 me-md-2">Contáctame</button>
+              <a href="#contacto"><button type="button"
+                  class="btn btn-info  btn-lg px-4 me-md-2">Contáctame</button></a>
               <button type="button" class="btn btn-outline-warning btn-lg px-4">dianarendon2011@gmail.com</button>
             </div>
           </div>
@@ -104,194 +111,210 @@
     </section>
 
     <!-- Habilidades -->
-    <section id="habilidades" class="container px-4 py-5">
+    <section id="habilidades" class="container-fluid bg-habilidades">
 
-      <!-- Título de mi sección -->
-      <h2 class="pb-2 border-bottom">Habilidades</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="container px-4 py-5">
 
-        <!-- Habilidad 1 -->
-        <div class="col d-flex align-items-start">
-          <!-- Ícono                                                                                                                             cambia tamaño en x & y & redondea el borde-->
-          <div
-            class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
-            <i class="bi bi-code-slash"></i>
-            <!-- <svg class="bi" width="1em" height="1em">
+        <!-- Título de mi sección -->
+        <h2 class="pb-2 border-bottom">Habilidades</h2>
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+
+          <!-- Habilidad 1 -->
+          <div class="col d-flex align-items-start">
+            <!-- Ícono                                                                                                                             cambia tamaño en x & y & redondea el borde-->
+            <div
+              class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
+              <i class="bi bi-code-slash"></i>
+              <!-- <svg class="bi" width="1em" height="1em">
               <use xlink:href="#toggles2"></use>
             </svg> -->
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
-            <p>
-              Conocimiento en HTML y CSS
-            </p>
-            <!-- 
+            </div>
+            <div>
+              <h3 class="fs-2  ">Desarrollo web</h3>
+              <p>
+                Conocimiento en HTML, CSS y JS
+              </p>
+              <!-- 
             Podemos redirigir a un proyecto que lo pruebe
             <a href="#" class="btn btn-primary">
               Primary button
             </a> -->
+            </div>
           </div>
+
+
+          <!-- Habilidad 2 -->
+          <div class="col d-flex align-items-start">
+            <!-- Ícono -->
+            <div
+              class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
+              <i class="bi bi-people"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 ">Trabajo en equipo</h3>
+              <p>
+                Colaboro con equipos multidisciplinarios
+              </p>
+            </div>
+          </div>
+
+
+          <!-- Habilidad 3 -->
+          <div class="col d-flex align-items-start">
+            <!-- Ícono -->
+            <div
+              class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
+              <i class="bi bi-award"></i>
+            </div>
+            <div>
+              <h3 class="fs-2">Responsabilidad</h3>
+              <p>
+                Comprometida y dedicada en la entrega de proyectos de calidad.
+              </p>
+            </div>
+          </div>
+
+          <!-- Habilidad 4 -->
+          <div class="col d-flex align-items-start">
+            <!-- Ícono -->
+            <div
+              class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
+              <i class="bi bi-book"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 ">Aprendizaje Continuo</h3>
+              <p>
+                Mejoro constantemente mis habilidades y conocimientos
+              </p>
+            </div>
+          </div>
+
+
+
+
         </div>
-
-
-        <!-- Habilidad 2 -->
-        <div class="col d-flex align-items-start">
-          <!-- Ícono -->
-          <div
-            class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
-            <i class="bi bi-people"></i>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Trabajo en equipo</h3>
-            <p>
-              Colaboro con equipos multidisciplinarios
-            </p>
-          </div>
-        </div>
-
-
-        <!-- Habilidad 3 -->
-        <div class="col d-flex align-items-start">
-          <!-- Ícono -->
-          <div
-            class="icon-square text-bg-primary bg-warning d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2 px-3 rounded">
-            <i class="bi bi-award"></i>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Responsabilidad</h3>
-            <p>
-              Soy Responsable
-            </p>
-          </div>
-        </div>
-
-
-
-
-
+      </div>
+      </div>
 
       </div>
 
-
-      </div>
-
-      </div>
     </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="container px-4 py-5">
+    <section id="proyectos" class="container-fluid fondo-secciones">
 
-      <h2 class="pb-2 border-bottom">Proyectos</h2>
+      <div class="container px-4 py-5 fondo-secciones">
 
-      <!-- grid: nno importa si la página cambia de tamaño, este respeta la distibuvión dada -->
-      <!-- cómo quiero se acomode dependiendo de la pantalla: sm, md -->
-      <!-- <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-3 align-items-stretch g-4 py-5"></div> -->
+        <h2 class="pb-2 border-bottom text-white">Proyectos</h2>
 
-      <!-- por default, en esta fila sólo va 1 col, a partir de lg para arriba van 3 -->
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <!-- grid: nno importa si la página cambia de tamaño, este respeta la distibuvión dada -->
+        <!-- cómo quiero se acomode dependiendo de la pantalla: sm, md -->
+        <!-- <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-3 align-items-stretch g-4 py-5"></div> -->
+
+        <!-- por default, en esta fila sólo va 1 col, a partir de lg para arriba van 3 -->
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+          <!-- Proyecto 1 -->
+          <!-- columna -->
+          <div class="col">
+
+            <!-- carta -->
+            <div id="proyecto-1" class=" proyecto card card-cover h-100 overflow-hidden  rounded-4 shadow-lg">
+
+              <!-- contenedor de contenido -->
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                <!-- contenido -->
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <a href="https://clon-de-google-diana-rendon.netlify.app/">
+                      <img src="assets/google-icon.png" alt="Clon de google" width="32" height="32">
+
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://clon-de-google-diana-rendon.netlify.app/"> Ver más</a>
+                  </li>
 
 
 
-        <!-- Proyecto 1 -->
-        <!-- columna -->
-        <div class="col">
-
-          <!-- carta -->
-          <div id="proyecto-1" class=" proyecto card card-cover h-100 overflow-hidden  rounded-4 shadow-lg">
-
-            <!-- contenedor de contenido -->
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-
-              <!-- contenido -->
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
-
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <a href="https://clon-de-google-diana-rendon.netlify.app/">
-                    <img src="assets/google-icon.png" alt="Clon de google" width="32" height="32">
-
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://clon-de-google-diana-rendon.netlify.app/"> Ver más</a>
-                </li>
-
-
-
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
+          <!-- Proyecto 2 -->
+          <div class="col">
 
-        <!-- Proyecto 2 -->
-        <div class="col">
+            <!-- carta -->
+            <div id="proyecto-2" class=" proyecto card card-cover h-100 overflow-hidden  rounded-4 shadow-lg">
 
-          <!-- carta -->
-          <div id="proyecto-2" class=" proyecto card card-cover h-100 overflow-hidden  rounded-4 shadow-lg">
+              <!-- contenedor de contenido -->
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
 
-            <!-- contenedor de contenido -->
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <!-- contenido -->
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Recorrido Virtual</h3>
 
-              <!-- contenido -->
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Recorrido Virtual</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <a href="https://ciudad-modelo.itch.io/recorrido-cis3">
+                      <i class="bi bi-badge-vr-fill" style="font-size: 2rem; color: rgb(254, 254, 254);"></i>
 
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <a href="https://ciudad-modelo.itch.io/recorrido-cis3">
-                    <i class="bi bi-badge-vr-fill" style="font-size: 2rem; color: rgb(254, 254, 254);"></i>
+                    </a>
+                  </li>
 
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://ciudad-modelo.itch.io/recorrido-cis3"> Ver más</a>
-                </li>
+                  <li>
+                    <a href="https://ciudad-modelo.itch.io/recorrido-cis3"> Ver más</a>
+                  </li>
 
 
 
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
+          <!-- Proyecto 3 -->
+          <div class="col">
 
-        <!-- Proyecto 3 -->
-        <div class="col">
+            <!-- carta -->
+            <div id="proyecto-3" class=" proyecto card card-cover h-100 overflow-hidden  rounded-4 shadow-lg">
 
-          <!-- carta -->
-          <div id="proyecto-3" class=" proyecto card card-cover h-100 overflow-hidden  rounded-4 shadow-lg">
+              <!-- contenedor de contenido -->
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
 
-            <!-- contenedor de contenido -->
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <!-- contenido -->
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Portafolio</h3>
 
-              <!-- contenido -->
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Portafolio</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <a href="https://dianarendon.netlify.app/">
+                      <i class="bi bi-braces" style="font-size: 2rem; color: rgb(254, 254, 254);"></i>
 
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <a href="https://dianarendon.netlify.app/">
-                    <i class="bi bi-braces" style="font-size: 2rem; color: rgb(254, 254, 254);"></i>
+                    </a>
+                  </li>
 
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://dianarendon.netlify.app/"> Ver más</a>
-                </li>
+                  <li>
+                    <a href="https://dianarendon.netlify.app/"> Ver más</a>
+                  </li>
 
 
 
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
+
         </div>
 
     </section>
 
     <!-- Experiencias -->
-    <section id="experiencias">
+    <section id="experiencias" class="container px-4 py-5">
 
       <h2 class="pb-2 border-bottom">Experiencias</h2>
 
@@ -320,8 +343,8 @@
             <!-- da estilo -->
             <article class="container text-center">
               <img class="rounded-4" src="assets/inicio.avif" height="100" alt="">
-              <h3>Ada Lovelace</h3>
-              <p> Diana es una estudiante excepcional</p>
+              <h3>Consejera Universitaria</h3>
+              <p> Representante en el HCU de BUAP</p>
             </article>
 
           </div>
@@ -382,10 +405,14 @@
 
   <!-- Footer -->
   <footer id="contacto" class="py-3 bg-black" data-bs-theme="dark">
+    <h4 class="text-center pb-3 mb-3 text-body-secondary">Diseñando la vida que merezco vivir</h4>
+  
+
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
 
-      <h5 class="text-white text-center my-5">"...Por lo tanto, lo que debemos hacer es esforzarnos y perseverar y NUNCA
-        RENDIRNOS."</h5>
+      
+      <!-- <h5 class="text-white text-center ">"...Por lo tanto, lo que debemos hacer es esforzarnos y perseverar y NUNCA
+        RENDIRNOS."</h5> -->
 
       <li class="nav-item">
         <a href="#inicio" class="nav-link px-2 text-body-secondary">
@@ -409,10 +436,10 @@
 
 
 
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
+
     <p class="text-center text-body-secondary">© 2024 Diana Rendón, TECHNOLOCHICAS PRO</p>
+  
   </footer>
 
 
@@ -427,6 +454,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <!-- CDN para poder usar el estilo de letra -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
