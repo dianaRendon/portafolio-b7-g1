@@ -34,7 +34,7 @@
     <!-- color de fondo -->
     <!-- Fija la barra arriba -->
     <!-- color del icono menú -->
-    <nav class="navbar navbar-expand-md  fixed-top fondo" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md  fixed-top fondo-nav-bar" data-bs-theme="dark">
       <!-- container-fluid hace que el texto se expanda -->
       <div class="container ">
 
@@ -86,10 +86,11 @@
         <div id="inicio" class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img src="assets/presentacion.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-              height="500" loading="lazy">
+              height="500">
+            <!-- loading="lazy" -->
           </div>
 
-          <!-- inicio -->
+          <!-- presentación -->
           <div class="col-lg-6 source-code-pro-fuente">
             <h1 id="titulo" class=" display-5 text-white fw-bold text-body-emphasis lh-1 mb-3">Diana H. Rendón</h1>
 
@@ -99,10 +100,20 @@
               como desarrolladora y colaborar en proyectos que marquen una diferencia.
 
             </p>
+            <!-- botón -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="#contacto"><button type="button"
-                  class="btn btn-info  btn-lg px-4 me-md-2">Contáctame</button></a>
-              <button type="button" class="btn btn-outline-warning btn-lg px-4">dianarendon2011@gmail.com</button>
+              <a
+                href="mailto:daniparedesva28@gmail.com?subject=Consulta&body=Hola,%20estoy%20interesad@%20en%20tus%20servicios.">
+                <button id="correo" type="button" class="btn btn-info  btn-lg px-4 me-md-2">
+                  Contáctame
+                </button>
+              </a>
+              <a
+                href="mailto:dianarendon2011@gmail.com?subject=Consulta&body=Hola,%20estoy%20interesad@%20en%20tus%20servicios.">
+                <button type="button" class="btn btn-outline-warning btn-lg px-4">
+                  dianarendon2011@gmail.com
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -316,12 +327,11 @@
     <!-- Experiencias -->
     <section id="experiencias" class="container px-4 py-5">
 
-      <h2 class="pb-2 border-bottom">Experiencias</h2>
+      <h2 class="pb-2 border-bottom ">Experiencias</h2>
 
       <!-- fade hace la transición linda y autom -->
-      <!-- carousel-dark y data-bs-theme="dark" van en modo oscuro  -->
-      <div id="myCarousel" class="carousel carousel-dark slide mb-6 carousel-fade" data-bs-theme="dark"
-        data-bs-ride="carousel">
+      <!-- carousel-dark y data-bs-theme="dark" van en oscuro  -->
+      <div id="myCarousel" class="carousel slide pt-5 mb-6 carousel-fade" data-bs-ride="carousel">
         <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
             aria-label="Slide 1"></button>
@@ -332,6 +342,7 @@
         </div> -->
 
         <div class="carousel-inner">
+
           <!-- content 1 -->
           <div class="carousel-item active">
             <!-- aqui va la imagen de fondo para que las letras bayan por encima -->
@@ -342,7 +353,7 @@
 
             <!-- da estilo -->
             <article class="container text-center">
-              <img class="rounded-4" src="assets/inicio.avif" height="100" alt="">
+              <img class="rounded-4" src="assets/hcu.jpeg" height="150" alt="">
               <h3>Consejera Universitaria</h3>
               <p> Representante en el HCU de BUAP</p>
             </article>
@@ -352,22 +363,14 @@
           <!-- content 2 -->
           <div class="carousel-item">
             <article class="container text-center">
-              <img class="rounded-4" src="assets/inicio.avif" height="100" alt="">
-              <h3>Ada Lovelace 2</h3>
-              <p> Diana es una estudiante excepcional</p>
+              <img class="rounded-4" src="assets/learnbot.jpg" height="150" alt="">
+              <h3>1er lugar en proyectos de invención y emprendimiento</h3>
+              <p> Junto con mi equipo ganamos el primer lugar en la categoría de Proyectos de invención y emprendimiento
+              </p>
             </article>
 
           </div>
 
-          <!-- content 3 -->
-          <div class="carousel-item">
-            <article class="container text-center">
-              <img class="rounded-4" src="assets/google.png" height="100" alt="">
-              <h3>Ada Lovelace</h3>
-              <p> Diana es una estudiante excepcional</p>
-            </article>
-
-          </div>
 
 
           <!-- <div class="carousel-item active">
@@ -401,18 +404,18 @@
 
 
 
-
-
   <!-- Footer -->
   <footer id="contacto" class="py-3 bg-black" data-bs-theme="dark">
-    <h4 class="text-center pb-3 mb-3 text-body-secondary">Diseñando la vida que merezco vivir</h4>
-  
+
+    <p class="text-center">
+      <i class="bi bi-code" style="font-size: 5.5em;"></i>
+    </p>
+
+    <h5 class="text-center pb-3 mb-3 text-body-secondary">
+      I cry a lot but I'm so productive, it's an art. <i class="bi bi-heart"></i>
+    </h5>
 
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-
-      
-      <!-- <h5 class="text-white text-center ">"...Por lo tanto, lo que debemos hacer es esforzarnos y perseverar y NUNCA
-        RENDIRNOS."</h5> -->
 
       <li class="nav-item">
         <a href="#inicio" class="nav-link px-2 text-body-secondary">
@@ -434,12 +437,19 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a href="mailto:daniparedesva28@gmail.com?subject=Consulta&body=Hola,%20estoy%20interesad@%20en%20tus%20servicios."
+          class="nav-link px-2 text-body-secondary">
+          <i class="bi bi-google"></i>
+        </a>
+      </li>
+
 
 
     </ul>
 
     <p class="text-center text-body-secondary">© 2024 Diana Rendón, TECHNOLOCHICAS PRO</p>
-  
+
   </footer>
 
 

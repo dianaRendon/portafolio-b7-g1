@@ -36,3 +36,6 @@ typewriter
     .typeString('Desarrolladora Frontend JR')
     .pauseFor(1000)
     .start();
+
+
+// Enviar correo

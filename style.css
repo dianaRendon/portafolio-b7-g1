@@ -1,5 +1,12 @@
-.fondo {
-    /* height: 90vh;
+.fondo-nav-bar {
+    background-color: #3e005e;
+    
+}
+
+.fondo{
+    height: 90vh;
+    background-color: #3e005e;
+    /* 
     display: flex;
     justify-content: start;
     align-items: center;
@@ -7,10 +14,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    background-color: #3e005e;
 }
 
 .fondo-secciones {
+    
     /* background-color: #db545a; */
     background-color: #3e005e;
 }
@@ -66,3 +73,7 @@ body{
 #proyecto-3 {
     background-image: url(assets/portafolio.png);
 }
+
+
+
+
